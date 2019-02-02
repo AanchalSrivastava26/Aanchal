@@ -1,0 +1,24 @@
+						servlets
+
+*web component is a software entity that provides a response to a web request.
+
+web component is of two types=
+1.servlets(extends functionality of web server and generates dynamic response to a particular request using http request)
+2.jsp(extensible way to generate dynamic content)
+
+*wildfly is an example of application server
+
+
+*web container/servlet container/servlet engine=
+provide communication b/w web components and web server.
+
+*web containers= apache tomcat server
+	              sun's java web server
+*application containers= BEA system's weblogic, 		IBM's websphere application 		server,Redhat's wildfly server
+
+*servlet lifecycle=
+1.init()
+2.service()
+3.destroy()
+
+*steps to process a request=

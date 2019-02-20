@@ -1,0 +1,68 @@
+1.and v/s but
+2.scenario outline and data table
+3.@cachelookup=to store data
+
+							PDF= 01
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Given= given preconditions
+5.When= actions/when event occurs
+6.Then= outcome of an event
+-------------------------------------
+7.BDD is a team centric/cross functional workflow defined by product owner/business analyst/QA in simple english. These are then converted to scripts against functional code.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8.BDD helps to focus on the user’s needs and the system’s expected behavior rather than focusing too much on testing the implementation.Tests are explained as behavior of application and are more user focused
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+9.BDD requires no tool or programming language. It is just a concept
+-------------------------------------------------------------------------
+10.BDD is an extension of TDD
+--------------------------------
+11. In both TDD and BDD, we write tests first then we add application code.
+---------------------------------------------------------------------------
+12.BDD focusses on user behaviour more while TDD focusses on how functionality is implemented.
+--------------------------------------------------------------------------------------------------
+13.BDD enables all the stakeholders to be on the same page with requirements which makes acceptance easy, as opposed to TDD.
+-----------------------------------------------------------------------------------------------------------------------------------
+14.BDD is a changing approach to unit testing and acceptance testing.
+---------------------------------------------------------------------
+15.“As a [role] I want [feature] so that [benefit]”. 
+Acceptance criteria should be written in terms of scenarios and implemented as classes: Given [initial context], when [event occurs], then [ensure some outcomes].
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16.Cucumber= java framework for BDD . It is written in Ruby.
+---------------------------------------------------------------
+17.Gherkin= language having simple grammar using which application behaviour is defined in simple english text.
+-----------------------------------------------------------------------------------------------------------------
+18.Cucumber writes specifications in 30 languages.
+-------------------------------------------------------
+19.Specflow= inspired by cucumber in ror and .net world.It also allows to write specification in human readable Gherkin format
+-----------------------------------------------------------------------------------------------------------------------------
+						 	PDF=02
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1.Gherkin is used to write scenarios,background,features and steps. It is based on TreeTop behaviour. we can write it in 37+ languages.
+-----------------------------------------------------------------------------------------------------------------------------------------
+2. Gherkin is line oriented language and each line is called step.
+------------------------------------------------------------------
+3.Feature= heading for scenario
+--------------------------------------
+4.Background= executed before every scenario/defines steps common to all tests.
+-------------------------------------------------------------------------------------
+5.AND= used to add conditions to our step.
+-----------------------------------------------------------
+6.BUT= used to add negative type conditions.
+----------------------------------------------------------
+7. * Keyword= all the keywords can be replaced by the * keyword and your test will just work fine.
+	        defines the whole purpose of having Given, When, Then and all the other keywords.
+--------------------------------------------------------------------------------------------------------
+8.Scenario: Successful Login with Valid Credentials
+   	* User is on Home Page    
+	* User Navigate to LogIn Page    
+	* User enters UserName and Password     
+	* Message displayed Login Successfully
+------------------------------------------------------------------------------------------------------
+9.Scenario outline= replaces variables/keywords with the value from the table. Each row in the table is considered to be scenario.
+                                    It facilitates working with various examples.
+		|255626|,||,|7894363667|
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+

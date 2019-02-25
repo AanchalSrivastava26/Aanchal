@@ -1,0 +1,1 @@
+https://medium.com/@apdharshi/sending-email-confirmation-for-account-activation-with-spring-java-cc3f5bb1398e

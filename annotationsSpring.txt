@@ -1,0 +1,49 @@
+		custom annotations
+
+*@Required
+	specifies that the value of a bean property must be dependency injected. An error occcurs if value is not specified for that property.
+
+*@Autowired
+	specifies that there is no need of additional xml in our configuration file that specifies the relationship between two objects. There is no need for methods to set property in owning class.
+	
+*@Resource
+	declares a reference to a resource such as a data source, java messaging service(jms) or environment entry in deployment descriptor.
+
+*@Postconstruct
+	specifies a method that container will invoke after resource injection is complete but before any of the component's life cycle methods are called.
+
+*@Predestroy
+	specifies a method that container will invoke before removing component from service.
+------------------------------------------------------
+	Annotations to configure beans
+
+*@component
+	classes annotated with this annotations become spring beans.The purpose is to make class as spring managed component.
+
+*@controller
+	classes annotated with this annotation will be considered as controller in spring mvc.
+
+*@repository
+	indicates that class annotated with this annotation provides mechanism of storage,retrieval, search,update and delete operation on objects.
+
+*@service
+	class marked with this annotation implements business logic implementation.
+------------------------------------------------------
+	Annotations to configure application
+
+*@Bean
+	specifies that method with this annotation will return an object that is registered as bean in spring application context.
+-used to define the beans.
+
+*@EnableAutoConfiguration
+	automatically loads all the beans that the application requires.
+	
+*@Configuration
+	specifies that the class can be used by spring container as a source of bean definitions.(configuring beans without using dispatcher servlet)
+
+*@ComponentScan
+	eqivalent to <context:component-scan/> in spring xml configuration file. It is used to scan components like service,repository,entity etc without using xml.
+ 
+*@Transactional
+	alternative to xml based declarative approach to transaction configuration.
+*@AspectJ
